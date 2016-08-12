@@ -42,7 +42,7 @@ ________________________________________________________________________________
 P4.30. Faça um algoritmo que mostre todos os números inteiros de 1 a 50.
 
 num = 1
-while num <= 50:
+while (num <= 50):
     print(num)
     num = 1 + num
 
@@ -51,7 +51,7 @@ ________________________________________________________________________________
 P4.31. Faça um algoritmo que mostre todos os números inteiros pares de 2 a 100.
 
 num = 2
-while (num % 2 == 0) and num <= 100:
+while (num % 2 == 0) and (num <= 100):
     print(num)
     num = num + 2
 
@@ -60,7 +60,7 @@ ________________________________________________________________________________
 P4.32. Faça um algoritmo que gere a seguinte série: 10, 20, 30, 40, ..., 990, 1000.
 
 num = 10
-while (num % 10 == 0) and num <= 1000:
+while (num % 10 == 0) and (num <= 1000):
     print(num)
     num = num + 10
 
@@ -68,7 +68,7 @@ ________________________________________________________________________________
 P4.33. Faça um algoritmo para gerar e exibir os números inteiros de 100 até 1, decrescendo de 1 em 1.
 
 N = int(input("Digite um número inteiro: "))
-while N >= 1 and N <= 100:
+while (N >= 1) and (N <= 100):
 	print(N)
 	N = N - 1
 
@@ -78,14 +78,15 @@ __________________________________________________________
 P4.34. Faça um algoritmo que leia um número N, some todos os números inteiros de 1 a N, e mostre o resultado obtido.
 
 
-numerodesejado = int(input("Digite o número que deseja: "))
+nlimite = int(input("Número: "))
 
-num = 1
-soma = 0
-while num <= numerodesejado:
-    soma=num+soma
-    num =1+num
+contador = 1
+total = 0
 
-print(soma)
+while (contador <= nlimite):
+    total=contador+total
+    contador=contador+1
+
+print(total)
    
 
